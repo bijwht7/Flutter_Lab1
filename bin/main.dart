@@ -6,14 +6,13 @@ void main(){
   var title = 'Учить Rust';
 
   var x = 5;
-  x = 'text';
+  //x = 'text';
 
   final id = 1;
   const appName = 'TodoApp';
 
   print('$name, $name2, $count, $title, $id, $appName');
-  ${count + 5}
-
+  
   List<String> tags = ['институт', 'дом'];
   Map<String, dynamic> data = {'key': 'value', 'num': 13};
   Set<int> ids = {1, 2, 3};
@@ -24,7 +23,7 @@ void main(){
   String greet(String name) => 'Hello, $name!';
 
   void printTodo({required String title, bool done = false}){
-    peint('${done ? '+' : '-'} $title');
+    print('${done ? '+' : '-'} $title');
   }
 
   printTodo(title: 'Купить молоко');
@@ -41,5 +40,5 @@ class Todo{
   Todo.empty() : id = 0, title = '', isDone = false;
   @override
   String toString() => '${isDone ? '+' : '-'} [$id] $title';
-  
+
 }
